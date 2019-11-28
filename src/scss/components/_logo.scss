@@ -1,0 +1,20 @@
+.logo {
+  @include from($md) {
+    background: url('./../img/logo-bg.png') no-repeat center / cover;
+  }
+  &__link, &__image {
+    @extend .press;
+  }
+  &__image {
+    @include from($lg) {
+      max-width: 226px;
+    }
+    // @extend .trans-250;
+    // .logo__link:hover & {
+    //   opacity: .8;
+    // }
+    // .logo__link:active & {
+    //   transform: scale(.9);
+    // }
+  }
+}

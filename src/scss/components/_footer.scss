@@ -1,0 +1,63 @@
+.footer {
+  // height: 50px;
+  padding: 1rem 0;  @include from($lg) {
+    padding: .65rem 0;
+  }
+  &__inner {
+    
+  }
+  &__menu {
+    @extend .list-bare;
+    @extend .no-bullets;
+    @extend .flex;
+    @include from($md) {
+      grid-column: 2 / 3;
+    }
+    li {
+      font-size: var(--smaller-font-size);
+      text-transform: uppercase;
+      position: relative;
+      @extend .mr-3;
+      @extend .flex-convenient;
+      &::after {
+        $size: 5px;
+        background: var(--dark-color);
+        content: "";
+        width: $size;
+        height: $size;
+        position: absolute;
+        right: calc(-.75rem - 3px);
+        @extend .block;
+        @extend .circle;
+      }
+      &:last-child {
+        position: static;
+        @extend .pr-0;
+        @extend .mr-0;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    a {
+      color: var(--dark-color);
+      @extend .weight-700;
+      @extend .block;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.brand {
+  margin-top: .25rem;
+  @include from($md) {
+    margin-top: 0;
+    margin-left: auto;
+    grid-column: 3 / 4;
+  }
+  &__image {
+    @extend .press;
+  }
+}

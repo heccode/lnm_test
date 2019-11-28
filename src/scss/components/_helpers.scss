@@ -1,0 +1,251 @@
+// Text
+.text {
+  // Aligns
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-just {
+    text-align: justify;
+  }
+  // Weights
+  @at-root {
+    .weight {
+      @for $i from 3 through 9 {
+        &-#{$i}00 {
+          font-weight: $i * 100 !important;
+        }
+      }
+    }
+  }
+  &-black {
+    @extend .weight-900;
+  }
+  &-extrabold {
+    @extend .weight-800;
+  }
+  &-bold {
+    @extend .weight-700;
+  }
+  &-bolder {
+    @extend .weight-600;
+  }
+  &-medium {
+    @extend .weight-500;
+  }
+  &-regular {
+    @extend .weight-400;
+  }
+  &-light {
+    @extend .weight-300;
+  }
+  &-italic {
+    font-style: italic;
+  }
+}
+
+// Background
+.bg {
+  &-light {
+    background: var(--light-color);
+  }
+  &-dark {
+    background: var(--dark-color);
+  }
+}
+
+// Border Radius
+.radius {
+  border-radius: var(--base-radius-unit);
+  &-2 {
+    border-radius: #{$baseRadiusUnit * 2}
+  }
+  &-top {
+    border-radius: var(--base-radius-unit) var(--base-radius-unit) 0 0;
+  }
+  &-right {
+    border-radius: 0 var(--base-radius-unit) var(--base-radius-unit) 0;
+  }
+  &-left {
+    border-radius: var(--base-radius-unit) 0 0 var(--base-radius-unit);
+  }
+  &-bottom {
+    border-radius: 0 0 var(--base-radius-unit) var(--base-radius-unit);
+  }
+}
+
+// Circle
+.circle {
+  border-radius: 50%;
+}
+
+// Display
+.inline       { display: inline; }
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.hidden       { display: none; }
+
+// Press
+.press {
+  line-height: 1;
+  @extend .block;
+}
+
+// Grid
+.grid {
+  display: grid;
+}
+// Flexbox
+.flex { 
+  display: flex;
+}
+.justify-content {
+  &-start {
+    justify-content: flex-start;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+  &-end {
+    justify-content: flex-end;
+  }
+}
+.align-items {
+  &-start {
+    align-items: flex-start;
+  }
+  &-center {
+    align-items: center;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+}
+.flex {
+  &-convenient {
+    @extend .flex;
+    @extend .justify-content-between;
+    @extend .align-items-center; 
+  }
+  &-center {
+    @extend .flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+  }
+}
+
+// Floats
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+// Lists
+.no-bullets     { list-style: none; }
+.bullets-inside { list-style: inside; }
+.list-bare {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  @extend .no-bullets;
+}
+
+// Margins
+.m {
+  @for $i from 0 through 6 {
+    &x-#{$i} {
+      margin: $i * $baseUnitMargin;
+    }
+    &t-#{$i} {
+      margin-top: $i * $baseUnitMargin;
+    }
+    &r-#{$i} {
+      margin-right: $i * $baseUnitMargin;
+    }
+    &b-#{$i} {
+      margin-bottom: $i * $baseUnitMargin;
+    }
+    &l-#{$i} {
+      margin-left: $i * $baseUnitMargin;
+    }
+  }
+  &x-a {
+    margin: auto;
+  }
+}
+
+// Paddings
+.p {
+  @for $i from 0 through 6 {
+    &x-#{$i} {
+      padding: $i * $baseUnitPadding;
+    }
+    &t-#{$i} {
+      padding-top: $i * $baseUnitPadding;
+    }
+    &r-#{$i} {
+      padding-right: $i * $baseUnitPadding;
+    }
+    &b-#{$i} {
+      padding-bottom: $i * $baseUnitPadding;
+    }
+    &l-#{$i} {
+      padding-left: $i * $baseUnitPadding;
+    }
+  }
+  &x-a {
+    padding: auto;
+  }
+}
+
+// Transition
+.trans {
+  &-250 {
+    transition: all 250ms ease-in-out;
+  }
+  &-350 {
+    transition: all 350ms ease-in-out;
+  }
+  &-500 {
+    transition: all 500ms ease-in-out;
+  }
+}
+
+// Box
+.box {
+  &-light {
+    box-shadow: 0 0 5px 1px var(--gray-color);
+    @extend .bg-light;
+    &-blue {
+      box-shadow: 0 19px 35px 0 rgba(58,111,175,.19);
+      @extend .bg-light;
+    }
+  }
+  &-dark {
+    box-shadow: 0 0 5px 1px var(--gray-color);
+    @extend .bg-dark;
+  }
+}
+
+// Widths
+.w {
+  @for $i from 0 through 5 {
+    &-#{$i * 20} {
+      width: $i * 20%;
+    }
+  }
+}

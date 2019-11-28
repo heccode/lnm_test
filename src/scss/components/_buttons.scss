@@ -1,0 +1,36 @@
+.btn {
+  --color: var(--gray-color);
+  background: var(--color);
+  border: none;
+  color: var(--dark-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--smaller-font-size);
+  padding: 0 #{$baseUnitPadding * 2};
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: rem(40px);
+  @include radius(rem(20px));
+  @extend .weight-700;
+  @extend .text-center;
+  @extend .trans-250;
+  &:hover {
+    filter: brightness(112%);
+  }
+  &:active {
+    transform: scale(.95);
+  }
+  &--primary {
+    background: var(--second-color);
+    color: var(--white);
+  }
+  &--fb {
+    background: var(--facebook-color);
+    color: var(--white);
+  }
+  &--large {
+    // padding: $baseUnitPadding * 2 $baseUnitPadding * 3.25;
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,38 @@
+.wrap {
+  width: 90%;
+  max-width: var(--wrap);
+  margin: auto;
+}
+
+.contact {
+  &__inner {
+    @include from($lg) {
+      display: grid;
+      grid-template-columns: 1fr 350px;
+    }
+  }
+  &__form {
+    justify-items: center;
+    grid-gap: 2rem;
+    @extend .grid;
+  }
+}
+
+.form {
+  grid-gap: rem(12px);
+  @extend .grid;
+  &-control {
+
+  }
+}
+
+.footer {
+  &__inner {
+    grid-gap: .5rem;
+    justify-items: center;
+    @extend .grid;
+    @include from($md) {
+      grid-template-columns: 100px 1fr 100px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+/*
+* Importing all fonts
+*/
+
+// Importing Gotham Fonts
+@font-face {
+  font-family: 'Gotham';
+  src: url('./../fonts/GothamLight.eot?#iefix') format('embedded-opentype'),  url('./../fonts/GothamLight.woff') format('woff'), url('./../fonts/GothamLight.ttf')  format('truetype'), url('./../fonts/GothamLight.svg#GothamLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./../fonts/GothamBook.eot?#iefix') format('embedded-opentype'),  url('./../fonts/GothamBook.woff') format('woff'), url('./../fonts/GothamBook.ttf')  format('truetype'), url('./../fonts/GothamBook.svg#GothamBook') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./../fonts/GothamMedium.eot?#iefix') format('embedded-opentype'),  url('./../fonts/GothamMedium.woff') format('woff'), url('./../fonts/GothamMedium.ttf')  format('truetype'), url('./../fonts/GothamMedium.svg#GothamMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./../fonts/GothamBold.eot?#iefix') format('embedded-opentype'),  url('./../fonts/GothamBold.woff') format('woff'), url('./../fonts/GothamBold.ttf')  format('truetype'), url('./../fonts/GothamBold.svg#GothamBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./../fonts/GothamBlack.eot?#iefix') format('embedded-opentype'),  url('./../fonts/GothamBlack.woff') format('woff'), url('./../fonts/GothamBlack.ttf')  format('truetype'), url('./../fonts/GothamBlack.svg#GothamBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Importing icon fonts from icomoon
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./../fonts/icomoon.eot');
+  src:  url('./../fonts/icomoon.eot') format('embedded-opentype'),
+    url('./../fonts/icomoon.ttf') format('truetype'),
+    url('./../fonts/icomoon.woff') format('woff'),
+    url('./../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

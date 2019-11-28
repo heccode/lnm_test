@@ -1,0 +1,33 @@
+/*
+  This boilerplate is based in ITCSS and SMACSS
+*/
+
+// Config
+@import "config/functions";
+@import "config/mixins";
+@import "config/variables";
+
+// Base and elements (generic)
+@import "base/normalize";
+@import "base/base";
+@import "base/general";
+  
+// LAYOUT
+@import "layout/layout";
+
+// MODULOS (SMACSS) O COMPONENTES (ITCSS)
+@import "components/fonts";
+@import "components/typography";
+@import "components/icon-fonts";
+@import "components/logo";
+@import "components/sections";
+@import "components/buttons";
+@import "components/contact";
+@import "components/persons";
+@import "components/joinfb";
+@import "components/form";
+@import "~animate.css/source/_base.css";
+@import "~animate.css/source/attention_seekers/swing.css";
+@import "~animate.css/source/fading_entrances/fadeInRight.css";
+@import "components/footer";
+@import "components/helpers";

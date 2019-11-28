@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet"></head>
+<body>
+  <section class="section contact">
+    <div class="contact__inner wrap">
+      <div class="contact__figure">
+        <!-- empty -->
+      </div>
+      <div class="contact__form">
+        <div class="logo animated swing">
+          <a href="./index.html" class="logo__link">
+            <img src="./img/logo.png" alt="Grita gol con topitop" class="logo__image">
+          </a>
+        </div>
+        <div class="joinfb  animated fadeInRight">
+          <p class="joinfb__label">Regístrate para participar</p>
+          <div class="joinfb__button">
+            <a href="#" class="btn btn--fb"><span class="icon-facebook"></span> Participar con Facebook</a>
+          </div>
+        </div>
+        <form action="" class="form animated fadeInRight" id="form">
+          <div class="form__block">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Nombre completo" required>
+          </div>
+          <div class="form__block">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico" required>
+          </div>
+          <div class="form__block">
+            <input type="text" name="dni" id="dni" class="form-control" placeholder="Número de DNI" required>
+          </div>
+          <div class="form__block">
+            <select name="department" id="department" class="form-control">
+              <option value="">Departamento</option>
+              <option value="lima">Lima</option>
+              <option value="arequipa">Arequipa</option>
+              <option value="tacna">Tacna</option>
+              <option value="piura">Piura</option>
+            </select>
+          </div>
+          <div class="form__block">
+            <select name="province" id="province" class="form-control">
+                <option value="">Provincia</option>
+                <option value="lima">Lima metropolitana</option>
+                <option value="callao">Callao</option>
+                <option value="huaral">Huaral</option>
+              </select>
+          </div>
+          <div class="form__block mt-1 mb-3">
+            <input type="checkbox" name="accept-terms" id="accept-terms" class="form-control" hidden>
+            <label for="accept-terms">
+              <span class="radio-button"></span>
+            </label>
+            <p class="form-message">
+              <a href="#">Aceptar términos y condiciones</a>
+            </p>
+          </div>
+          <div class="form__block">
+            <input type="submit" name="submit" id="submit" value="Continuar" class="btn btn--primary btn--large pl-5 pr-5">
+          </div>
+        </form>
+      </div>
+      <div class="contact__cover"></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__inner wrap">
+      <ul class="footer__menu">
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Bases y premios</a></li>
+      </ul>
+      <div class="brand">
+        <img src="./img/brand.png" alt="Topitop" class="brand__image">
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

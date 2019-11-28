@@ -1,0 +1,95 @@
+// Typography
+$bodyFont: 'Gotham', sans-serif;
+// $headingFont: ;
+$iconFont: 'icomoon';
+
+// Breakpoints
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$hd: 1200px;
+
+// Colors
+$firstColor: #E20613;
+$firstColorDark: darken($firstColor, 10);
+$secondColor: #D1B862;
+$secondColorDark: darken($secondColor, 10);
+
+// Status Colors
+$infoColor: #3795bf;
+$successColor: #3DD092;
+$warningColor: #ecb95c;
+$dangerColor: #DA362B;
+
+// Social Colors
+$fbColor: #5066AF;
+
+// Monochrome Colors
+$textColor: #525C69;
+$textColorDark: #333;
+$textColorLight: #adadad;
+$grayColor: #E9E7E7;
+$grayColorDark: #B2B2B2;
+$grayColorLight: #FAFAFA;
+$darkColor: #060606;
+$lightColor: #F7F8FB;
+
+// Literal Colors
+$black: black;
+$white: white;
+
+// Spacings
+$grid-gap: 2rem;
+$gutter: 2rem;
+$wrap: 1200px;
+
+// Basic Units
+$baseUnitMargin: .5rem;
+$baseUnitPadding: .5rem;
+
+// Radius Unit
+$baseRadiusUnit: 3px;
+
+:root {  
+  // Colors
+  --first-color: #{$firstColor};
+  --first-color-dark: #{$firstColorDark};
+  --second-color: #{$secondColor};
+  --second-color-dark: #{$secondColorDark};
+  // Status Colors
+  --info-color: #{$infoColor};
+  --success-color: #{$successColor};
+  --warning-color: #{$warningColor};
+  --danger-color: #{$dangerColor};
+  // Social Colors
+  --facebook-color: #{$fbColor};
+  // Monochrome Colors
+  --text-color: #{$textColor};
+  --text-color-dark: #{$textColorDark};
+  --text-color-light: #{$textColorLight};
+  --gray-color: #{$grayColor};
+  --gray-color-dark: #{$grayColorDark};
+  --gray-color-light: #{$grayColorLight};
+  --dark-color: #{$darkColor};
+  --light-color: #{$lightColor};
+  // Literal Colors
+  --white: #{$white};
+  --black: #{$black};
+
+  // Spacings
+  --spacing-section: #{$baseUnitPadding * 4};
+  --margin-section-header: #{$baseUnitMargin * 4};
+  --spacing-section-content: #{$baseUnitPadding * 4};
+  --grid-gap: #{$grid-gap};
+  --gutter: #{$gutter};
+  --wrap: #{$wrap};
+
+  // Radius Unit
+  --base-radius-unit: #{$baseRadiusUnit};
+  @include from($md) {
+    --gutter: #{$baseUnitMargin * 6};
+  }
+  @include from($lg) {
+    --spacing-section-content: #{$baseUnitPadding * 6};
+  }
+}

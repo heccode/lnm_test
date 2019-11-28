@@ -1,0 +1,18 @@
+.section {
+  padding: var(--spacing-section-content) 0;
+  &__header {
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    @extend .text-center;
+  }
+  &__title {
+    color: var(--dark-color);
+    @extend .mx-0;
+    @extend .weight-600;
+    @extend .t1;
+  }
+  &__content {
+
+  }
+}
